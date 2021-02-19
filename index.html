@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="mit patwa" />
+    <meta name="description" content="Convet Text Into Handwritten." />
+    <title>Convert Text Into Handwritten.</title>
+    <meta property="og:image"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.3.0/milligram.css" rel="stylesheet" />
+    <link href="https://milligram.io/styles/main.css" rel="stylesheet" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="/assets/css/dark.css"> -->
+</head>
+
+<body>
+    <main>
+        <nav class="navigation">
+            <section class="container">
+                <h4 class="title">Text Into Handwritten </h4>
+                </ul>
+        </nav>
+        <br />
+        <br /> &nbsp;
+        <div class="row" style="max-width: 99vw;">
+            <div class="column">
+                <section class="container" id="examples">
+                    <h3 class="title">Enter Text</h3>
+
+                    <form onsubmit="return false">
+                        <fieldset><textarea id="dataField" onkeyup="textChanged(this.value)" placeholder="Enter Text You want to be written a paper...."></textarea></fieldset>
+                        <input class="button-primary button-large download-image hidden" id="pageUploader" onclick="" type="file" />
+                        <div class="row"><button class="column button-primary button-large inline-btn" id="btnFileUpload">Upload Custom Background</button><button class="column button-primary button-large inline-btn" onclick="incrementor()">Change Handwriting Style</button>
+                            <button
+                                class="column button-primary button-large inline-btn" onclick="loadPage()">Change to Default Page</button><button class="column button-primary button-large download-image inline-btn" onclick="save(str(pageNum++))">Download Page</button></div>
+
+                        <div class="row">
+                            <div class="column"><label>Adjust X axis</label> <input class="slider" max="200" min="1" oninput="xaxis=float(this.value); loop();" type="range" value="20" /></div>
+
+                            <div class="column"><label>Adjust Y axis</label> <input class="slider" max="200" min="1" oninput="yaxis=float(this.value); loop();" type="range" value="20" /></div>
+
+                            <div class="column"><label>Font Size</label> <input class="slider" max="5" min="0.05" oninput="fontsize=float(this.value); loop();" step="0.1" type="range" value="1" /></div>
+
+                            <div class="column"><label>width</label> <input class="slider" max="800" min="100" oninput="w=float(this.value); loop();" type="range" value="700" /></div>
+
+                            <div class="column"><label>Line Spacing</label> <input class="slider" max="100" min="50" oninput="linespacing=float(this.value); loop();" type="range" value="60" /></div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div class="column">
+                <p></p>
+
+                <div id="contributing"></div>
+
+                <p></p>
+            </div>
+        </div>
+
+        
+
+                <p><a class="navigation-title" href="https://t.me/joinchat/U_OImVSn5o4baOeY">&nbsp; </a></p>
+
+                <h1 class="title"><span style="font-size:14px;"><a class="navigation-title" href="https://t.me/joinchat/U_OImVSn5o4baOeY"> &nbsp;</a></span></h1>
+                <br />
+                 <br />
+                <a href="https://www.instagram.com/mit_p_/">Follow me on instagram https://www.instagram.com/mit_p_/ </a>
+                <h1 class="title"><span style="font-size:18px;"><a class="navigation-title" href="https://t.me/joinchat/U_OImVSn5o4baOeY">Contact Me telegram . &nbsp;</a> Mit Patwa </span></h1>
+               <h2 class="title"><span style="font-size:18px;"><a class="navigation-title" >contact number +91 7506854809 </h2>
+                <h3 class="title"><span style="font-size:18px;"><a class="navigation-title" href= "mitpatwa123@gmail.com"> contact me on mitpatwa123@gmail.com</h3>
+     </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/sketch.js"></script>
+    <footer class="footer">
+        <section class="container">
+       <p>  Designed  by MIT PATWA </p> 
+</body>
+
+</html>
